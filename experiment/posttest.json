@@ -19,12 +19,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which drawing below shows the top view? <img src='./images/image13.png />",
+      "question": "Which drawing below shows the top view? <img src='./images/image13.png' />",
       "answers": {
-        "a": "<img src='./images/image28.png />",
-        "b": "<img src='./images/image30.png />",
-        "c": "<img src='./images/image24.png />",
-        "d": "<img src='./images/image20.png />"
+        "a": "<img src='./images/image28.png' />",
+        "b": "<img src='./images/image30.png' />",
+        "c": "<img src='./images/image24.png' />",
+        "d": "<img src='./images/image20.png' />"
       },
       "explanations": {
         "a": " ",
