@@ -2,37 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What are the three typical orthographic views of drawing?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Front,Top and Right side",
+        "b": "Front,Right side and Isometric",
+        "c": "Top,Bottom and Right side",
+        "d": "Top,Front and Left side"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": " ",
+        "b": " ",
+        "c": " ",
+        "d": " "
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which drawing below shows the top view? <img src='./images/image13.png />",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "<img src='./images/image28.png />",
+        "b": "<img src='./images/image30.png />",
+        "c": "<img src='./images/image24.png />",
+        "d": "<img src='./images/image20.png />"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": " ",
+        "b": " ",
+        "c": " ",
+        "d": " "
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Is this orthographic or isometric drawing? <img src='./images/image25.png' />",
+      "answers": {
+        "a": "Isometric View",
+        "b": "Orthographic view",
+        "c": "Both A and B",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": " ",
+        "b": " ",
+        "c": " ",
+        "d": " "
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Identify the top view of the given projection <img src='./images/image18.png' />",
+      "answers": {
+        "a": "<img src='./images/image11.png' />",
+        "b": "<img src='./images/image3.png' />",
+        "c": "<img src='./images/image23.png' />",
+        "d": "<img src='./images/image4.png' />"
+      },
+      "explanations": {
+        "a": " ",
+        "b": " ",
+        "c": " ",
+        "d": " "
       },
       "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "The drawing in which the view is drawn at an angle 30 and 150 is called______",
+      "answers": {
+        "a": "Auxiliary view",
+        "b": "Front view",
+        "c": "Perspective view",
+        "d": "Isometric view"
+      },
+      "explanations": {
+        "a": " ",
+        "b": " ",
+        "c": " ",
+        "d": " "
+      },
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
