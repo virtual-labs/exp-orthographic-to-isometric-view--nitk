@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What are the three typical orthographic views of drawing?",
+      "question": "Identify the top view of the given projection<br><img src='./images/image6.png' />",
       "answers": {
-        "a": "Front,Top and Right side",
-        "b": "Front,Right side and Isometric",
-        "c": "Top,Bottom and Right side",
-        "d": "Top,Front and Left side"
+        "a": "<img src='./images/image11.png' />",
+        "b": "<img src='./images/image5.png' />",
+        "c": "<img src='./images/image18.png' />",
+        "d": "<img src='./images/image12.png' />"
       },
       "explanations": {
         "a": " ",
@@ -15,33 +15,16 @@
         "c": " ",
         "d": " "
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Which drawing below shows the top view? <img src='./images/image13.png' />",
-      "answers": {
-        "a": "<img src='./images/image28.png' />",
-        "b": "<img src='./images/image30.png' />",
-        "c": "<img src='./images/image24.png' />",
-        "d": "<img src='./images/image20.png' />"
-      },
-      "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
-      },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "intermediate"
     },
     {
-      "question": "Is this orthographic or isometric drawing? <img src='./images/image25.png' />",
+      "question": "Identify the side view of the given projection<br><img src='./images/image6.png' />",
       "answers": {
-        "a": "Isometric View",
-        "b": "Orthographic view",
-        "c": "Both A and B",
-        "d": "None of the above"
+        "a": "<img src='./images/image11.png' />",
+        "b": "<img src='./images/image5.png' />",
+        "c": "<img src='./images/image18.png' />",
+        "d": "<img src='./images/image12.png' />"
       },
       "explanations": {
         "a": " ",
@@ -50,15 +33,15 @@
         "d": " "
       },
       "correctAnswer": "b",
-      "difficulty": "advanced"
+      "difficulty": "intermediate"
     },
     {
-      "question": "Identify the top view of the given projection <img src='./images/image18.png' />",
+      "question": "Identify the side view of the given projection<br><img src='./images/image2.png' />",
       "answers": {
-        "a": "<img src='./images/image11.png' />",
-        "b": "<img src='./images/image3.png' />",
-        "c": "<img src='./images/image23.png' />",
-        "d": "<img src='./images/image4.png' />"
+        "a": "<img src='./images/image14.png' />",
+        "b": "<img src='./images/image10.png' />",
+        "c": "<img src='./images/image1.png' />",
+        "d": "<img src='./images/image7.png' />"
       },
       "explanations": {
         "a": " ",
@@ -70,12 +53,12 @@
       "difficulty": "advanced"
     },
     {
-      "question": "The drawing in which the view is drawn at an angle 30 and 150 is called______",
+      "question": "The scale which is used in the isometric drawing is known as_____________",
       "answers": {
-        "a": "Auxiliary view",
-        "b": "Front view",
-        "c": "Perspective view",
-        "d": "Isometric view"
+        "a": "Simple scale",
+        "b": "Reducing scale",
+        "c": "Enlarged scale",
+        "d": "Isometric scale"
       },
       "explanations": {
         "a": " ",
@@ -84,6 +67,23 @@
         "d": " "
       },
       "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In preparing an isometric scale, the true or actual scale is drawn at ____ to the horizontal",
+      "answers": {
+        "a": "15°",
+        "b": "30°",
+        "c": "45°",
+        "d": "60°"
+      },
+      "explanations": {
+        "a": " ",
+        "b": " ",
+        "c": " ",
+        "d": " "
+      },
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   ]
