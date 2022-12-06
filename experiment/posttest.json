@@ -2,9 +2,9 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Identify the top view of the given projection<br><img src='./images/image6.png' /><br>",
+      "question": "Identify the top view of the given projection<br><img src='./images/image6.png' />",
       "answers": {
-        "a": "<img src='./images/image11.png' />",
+        "a": "<br><img src='./images/image11.png' />",
         "b": "<img src='./images/image5.png' />",
         "c": "<img src='./images/image18.png' />",
         "d": "<img src='./images/image12.png' />"
@@ -19,9 +19,9 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "Identify the side view of the given projection<br><img src='./images/image6.png' /><br>",
+      "question": "Identify the side view of the given projection<br><img src='./images/image6.png' />",
       "answers": {
-        "a": "<img src='./images/image11.png' />",
+        "a": "<br><img src='./images/image11.png' />",
         "b": "<img src='./images/image5.png' />",
         "c": "<img src='./images/image18.png' />",
         "d": "<img src='./images/image12.png' />"
@@ -36,9 +36,9 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "Identify the side view of the given projection<br><img src='./images/image2.png' /><br>",
+      "question": "Identify the side view of the given projection<br><img src='./images/image2.png' />",
       "answers": {
-        "a": "<img src='./images/image14.png' />",
+        "a": "<br><img src='./images/image14.png' />",
         "b": "<img src='./images/image10.png' />",
         "c": "<img src='./images/image1.png' />",
         "d": "<img src='./images/image7.png' />"
