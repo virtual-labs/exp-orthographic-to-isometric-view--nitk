@@ -18,6 +18,7 @@
     <li>Vaibhav Pratap | NITK</li>
     <li>Ranjan Tunga S | NITK</li>
     <li>Rohit Kushwaha | NITK</li>
+    <li>Nagaraj Kamath | NITK</li>
     <li>Akshaya | NITK</li>
     <li>Anusha B Salian | NITK</li>
     <li>Vishwas A S| NITK</li>
