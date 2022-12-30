@@ -34,8 +34,10 @@ function boom() {
   ctx.fillStyle = "black";
   ctx.font = "bold 14px Comic Sans MS";
   ctx.moveTo(0, 200 - 90);
-  ctx.fillText("VP", 250, 380);
-  ctx.fillText("HP", 250, 420);
+  // ctx.fillText("VP", 250, 380);
+  // ctx.fillText("HP", 250, 420);
+  // ctx.fillText("X", 210, 405);
+  // ctx.fillText("Y", 650, 405);
   ctx.fillText("Front view", 50, 102);
   ctx.fillText("Top view", 50, 222);
   ctx.fillText("Solid lines", 595, 25);
@@ -65,42 +67,42 @@ function boom() {
   ctx.closePath();
   ctx.beginPath();
   ctx.strokeStyle = "blue";
-  ctx.moveTo(160, 115);
-  ctx.lineTo(160, 200);
+  ctx.moveTo(200, 115);
+  ctx.lineTo(200, 200);
   ctx.stroke();
-  ctx.moveTo(50, 200);
-  ctx.lineTo(50, 180);
+  ctx.moveTo(180, 200);
+  ctx.lineTo(180, 180);
   ctx.stroke();
-  ctx.moveTo(160, 425);
-  ctx.lineTo(160, 235);
+  ctx.moveTo(200, 425);
+  ctx.lineTo(200, 235);
   ctx.stroke();
-  ctx.moveTo(30, 296);
-  ctx.lineTo(30, 235);
+  ctx.moveTo(180, 296);
+  ctx.lineTo(180, 235);
   ctx.stroke();
-  ctx.moveTo(45, 330);
-  ctx.lineTo(5, 330);
+  ctx.moveTo(45, 450);
+  ctx.lineTo(5, 450);
   ctx.stroke();
-  ctx.moveTo(45, 330);
-  ctx.lineTo(95, 330);
+  ctx.moveTo(45, 450);
+  ctx.lineTo(95, 450);
   ctx.stroke();
-  ctx.moveTo(145, 440);
-  ctx.lineTo(5, 440);
+  ctx.moveTo(145, 467);
+  ctx.lineTo(5, 467);
   ctx.stroke();
   ctx.fillStyle = "orange";
-  canvas_arrow(ctx, 160, 100, 160, 200, 5);
-  canvas_arrow(ctx, 160, 200, 160, 115, 5);
-  canvas_arrow(ctx, 50, 190, 50, 200, 5);
-  canvas_arrow(ctx, 160, 230, 160, 425, 5);
-  canvas_arrow(ctx, 160, 410, 160, 235, 5);
-  canvas_arrow(ctx, 50, 190, 50, 180, 5);
-  canvas_arrow(ctx, 30, 225, 30, 296, 5);
-  canvas_arrow(ctx, 30, 255, 30, 235, 5);
-  canvas_arrow(ctx, 10, 330, 45, 330, 5);
-  canvas_arrow(ctx, 45, 330, 5, 330, 5);
-  canvas_arrow(ctx, 45, 330, 95, 330, 5);
-  canvas_arrow(ctx, 95, 330, 55, 330, 5);
-  canvas_arrow(ctx, 5, 440, 145, 440, 5);
-  canvas_arrow(ctx, 145, 440, 5, 440, 5);
+  canvas_arrow(ctx, 200, 100, 200, 200, 5);
+  canvas_arrow(ctx, 200, 200, 200, 115, 5);
+  canvas_arrow(ctx, 180, 190, 180, 200, 5);
+  canvas_arrow(ctx, 180, 190, 180, 180, 5);
+  canvas_arrow(ctx, 200, 230, 200, 425, 5);
+  canvas_arrow(ctx, 200, 410, 200, 235, 5);
+  canvas_arrow(ctx, 180, 225, 180, 296, 5);
+  canvas_arrow(ctx, 180, 255, 180, 235, 5);
+  canvas_arrow(ctx, 10, 450, 45, 450, 5);
+  canvas_arrow(ctx, 45, 450, 5, 450, 5);
+  canvas_arrow(ctx, 45, 450, 95, 450, 5);
+  canvas_arrow(ctx, 95, 450, 55, 450, 5);
+  canvas_arrow(ctx, 5, 467, 145, 467, 5);
+  canvas_arrow(ctx, 145, 467, 5, 467, 5);
   ctx.beginPath();
   ctx.moveTo(580, 20);
   ctx.arc(580, 20, 7, 0, 2 * Math.PI);
@@ -110,20 +112,20 @@ function boom() {
   ctx.beginPath();
   ctx.moveTo(580, 40);
   ctx.arc(580, 40, 7, 0, 2 * Math.PI);
-  ctx.fillStyle = "#d9b28a";
+  ctx.fillStyle = "#ae8e6e";
   ctx.fill();
   ctx.closePath();
   ctx.font = "bold 12px Arial";
-  ctx.fillText("50", 19, 325);
-  ctx.fillText("50", 68, 325);
-  ctx.fillText("150", 70, 455);
+  ctx.fillText("50", 19, 445);
+  ctx.fillText("50", 68, 445);
+  ctx.fillText("150", 70, 464);
 
   ctx.save();
 
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
 
-  ctx.translate(170, 164);
+  ctx.translate(190, 164);
   ctx.rotate(Math.PI / 2);
   ctx.fillText("96", 0, 0);
 
@@ -133,8 +135,8 @@ function boom() {
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
 
-  ctx.translate(170, 330);
-  ctx.rotate(Math.PI / 2);
+  ctx.translate(190, 330);
+  ctx.rotate(-Math.PI / 2);
   ctx.fillText("200", 0, 0);
 
   ctx.restore();
@@ -143,8 +145,8 @@ function boom() {
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
 
-  ctx.translate(40, 270);
-  ctx.rotate(Math.PI / 2);
+  ctx.translate(170, 270);
+  ctx.rotate(-Math.PI / 2);
   ctx.fillText("72", 0, 0);
 
   ctx.restore();
@@ -153,8 +155,8 @@ function boom() {
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
 
-  ctx.translate(60, 190);
-  ctx.rotate(Math.PI / 2);
+  ctx.translate(170, 190);
+  ctx.rotate(-Math.PI / 2);
   ctx.fillText("32", 0, 0);
 
   ctx.restore();
@@ -192,14 +194,22 @@ function a() {
   document.getElementById("a").style.visibility = "hidden";
   var cvs = document.getElementsByTagName("canvas")[0];
   var ctx = cvs.getContext("2d");
+  ctx.fillStyle = "black";
+
+  ctx.font = "bold 14px Comic Sans MS";
+  ctx.fillText("VP", 250, 380);
+  ctx.fillText("HP", 250, 420);
+  ctx.fillText("X", 210, 405);
+  ctx.fillText("Y", 660, 405);
   ctx.beginPath();
   ctx.lineWidth = 1;
   ctx.strokeStyle = "black";
-  ctx.moveTo(200, 400);
-  ctx.lineTo(700, 400);
+  ctx.moveTo(230, 400);
+  ctx.lineTo(650, 400);
   ctx.stroke();
   ctx.moveTo(450, 400);
   ctx.font = "bold 12px Arial";
+
   ctx.fillText("30°", 500, 390);
   ctx.fillText("30°", 380, 390);
   ctx.arc(450, 400, 40, -Math.PI / 6, 0);
