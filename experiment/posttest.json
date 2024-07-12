@@ -10,10 +10,10 @@
         "d": "<img src='./images/image12.png' />"
       },
       "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
+        "a": "The right answer is (d).  ",
+        "b": "The right answer is (d). ",
+        "c": "The right answer is (d). ",
+        "d": "Correct, the right answer is (d). "
       },
       "correctAnswer": "d",
       "difficulty": "intermediate"
@@ -27,10 +27,10 @@
         "d": "<img src='./images/image12.png' />"
       },
       "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
+        "a": "The right answer is (b). ",
+        "b": "Correct, the right answer is (b). ",
+        "c": "The right answer is (b). ",
+        "d": "The right answer is (b). "
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
@@ -44,10 +44,10 @@
         "d": "<img src='./images/image7.png' />"
       },
       "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
+        "a": "The right answer is (c). ",
+        "b": "The right answer is (c). ",
+        "c": "Correct, the right answer is (c). ",
+        "d": "The right answer is (c). "
       },
       "correctAnswer": "c",
       "difficulty": "advanced"
@@ -61,10 +61,10 @@
         "d": "Isometric scale"
       },
       "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
+        "a": "The right answer is (d). A simple scale is a tool used to measure a object's length or draw a line with perfect length. ",
+        "b": "The right answer is (d). In engineering drawing, a reducing scale is used when the actual dimensions of an object are too large to fit comfortably on the drawing sheet.",
+        "c": "The right answer is (d). An enlarging scale is used in engineering drawing when the actual dimensions of an object are too small to be comfortably drawn at their true size on the drawing sheet. ",
+        "d": "Correct, the right answer is (d). The isometric scale allows us to convert actual dimensions of an object into isometric dimensions. When drawing an isometric projection, all distances are reduced to 2/3 of their true size, or approximately 80%."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -78,10 +78,10 @@
         "d": "60°"
       },
       "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
+        "a": "The right answer is (c). ",
+        "b": "The right answer is (c). ",
+        "c": "Correct, the right answer is (c). ",
+        "d": "The right answer is (c). "
       },
       "correctAnswer": "c",
       "difficulty": "beginner"

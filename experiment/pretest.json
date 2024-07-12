@@ -10,10 +10,10 @@
         "d": "33.3%"
       },
       "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
+        "a": "The right answer is (c).  If the foreshortening of the isometric lines in an isometric projection is disregarded and instead, the true lengths are marked, the view obtained will be exactly of the same shape but larger in proportion than that obtained by the use of the isometric scale. ",
+        "b": "The right answer is (c).  If the foreshortening of the isometric lines in an isometric projection is disregarded and instead, the true lengths are marked, the view obtained will be exactly of the same shape but larger in proportion than that obtained by the use of the isometric scale. ",
+        "c": "Correct, the right answer is (c).  If the foreshortening of the isometric lines in an isometric projection is disregarded and instead, the true lengths are marked, the view obtained will be exactly of the same shape but larger in proportion than that obtained by the use of the isometric scale. ",
+        "d": "The right answer is (c).  If the foreshortening of the isometric lines in an isometric projection is disregarded and instead, the true lengths are marked, the view obtained will be exactly of the same shape but larger in proportion than that obtained by the use of the isometric scale. "
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
@@ -27,10 +27,10 @@
         "d": "Orthographic view"
       },
       "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
+        "a": "The right answer is (c). Isometric projection is a fundamental technique used in engineering drawing to represent three-dimensional objects in a two-dimensional space.",
+        "b": "Correct, the right answer is (b). Due to the ease of construction and the advantage of measuring the dimensions directly from the drawing, it has become a general practice to use the true scale instead of the isometric scale.",
+        "c": "The right answer is (c). Isometric perception in engineering drawing refers to the visual representation of three-dimensional objects using isometric projection. ",
+        "d": "The right answer is (c). Geometrical figures exist in two dimensions, so they can be accurately drawn on a sheet of paper. However, solids are three-dimensional objects, making it impossible to illustrate them in their true shape on paper. Orthographic projection solves this problem by allowing us to represent solids pictorially while maintaining their true shapes and sizes."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -44,10 +44,10 @@
         "d": "Orthographic view"
       },
       "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
+        "a": "Correct, the right answer is (a). To avoid confusion, the view drawn with the true scale is called isometric drawing or isometric view, while that drawn with the use of isometric scale is called isometric projection. ",
+        "b": "The right answer is (a). If an isometric projection is drawn with true measurements but not with isometric scale then drawing are called Isometric view. ",
+        "c": "The right answer is (a). Isometric perception in engineering drawing refers to the visual representation of three-dimensional objects using isometric projection. ",
+        "d": "The right answer is (a). Geometrical figures exist in two dimensions, so they can be accurately drawn on a sheet of paper. However, solids are three-dimensional objects, making it impossible to illustrate them in their true shape on paper. Orthographic projection solves this problem by allowing us to represent solids pictorially while maintaining their true shapes and sizes."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -61,10 +61,10 @@
         "d": "<img src='./images/image12.png' />"
       },
       "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
+        "a": "Correct, the right answer is (a).",
+        "b": "The right answer is (a). ",
+        "c": "The right answer is (a). ",
+        "d": "The right answer is (a). "
       },
       "correctAnswer": "a",
       "difficulty": "advanced"
@@ -78,10 +78,10 @@
         "d": "<img src='./images/image18.png' />"
       },
       "explanations": {
-        "a": " ",
-        "b": " ",
-        "c": " ",
-        "d": " "
+        "a": "The right answer is (d).  ",
+        "b": "The right answer is (d). ",
+        "c": "The right answer is (d). ",
+        "d": "Correct, the right answer is (d). "
       },
       "correctAnswer": "d",
       "difficulty": "intermediate"
