@@ -2,7 +2,7 @@
 
 When the projectors (ex: line of sight of humans) from the source are parallel to each other and perpendicular to the plane of the object, for example a person looking at building, then the projection is called as an **Orthographic Projection**.
 
-**Isometric projections** enable an object to be viewed in three dimensions in a single view, from which the actual sizes can be measured.
+**Isometric projections** is a type of technical drawing where the three axes, i.e., x, y and z, are represented at equal angles (120 degrees) to each other. This gives a three-dimensional view where an object's depth, width and height appear to be in equal proportions.
 <br>
 
 Every point and every line in an orthographic view has a meaning. A point may represent a **corner** or an **edge**. A line may represent an **edge** or a **surface**. The meaning of each point or line should be interpreted by systematically referring back

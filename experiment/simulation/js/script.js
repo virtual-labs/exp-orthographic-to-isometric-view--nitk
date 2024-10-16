@@ -23,7 +23,8 @@ const data = [
     title: "Draw the desired outline of the project",
     questions: [
       {
-        question: "Which type of line in an isometric drawing is used to show edges that are not directly visible________?",
+        question:
+          "Which type of line in an isometric drawing is used to show edges that are not directly visible________?",
         options: ["Solid line", "Dashed line", "Dotted line", "Thick line"],
         answer: 1,
         buttonClass: "btnPyramid",
@@ -35,7 +36,8 @@ const data = [
     title: "Transfer the front view to isometric view",
     questions: [
       {
-        question: "What are the views given in the experiment for converting into isometric view________?",
+        question:
+          "What are the views given in the experiment for converting into isometric view________?",
         options: [" Front, Side", "Front, Top", "Top , Side", "Top, Isometric"],
         answer: 1,
         buttonClass: "btnC",
@@ -47,7 +49,8 @@ const data = [
     title: "Transfer the top view to isometric view",
     questions: [
       {
-        question: "The lines parallel to isometric axes are called ___________ lines?",
+        question:
+          "The lines parallel to isometric axes are called ___________ lines?",
         options: ["parallel", "auxiliary", "isometric", "oblique"],
         answer: 2,
         buttonClass: "btnB",
@@ -71,7 +74,8 @@ const data = [
     title: "Highlight the drawing",
     questions: [
       {
-        question: "Which type of line in an isometric drawing is used to highlight the edges that are visible________?",
+        question:
+          "Which type of line in an isometric drawing is used to highlight the edges that are visible________?",
         options: ["Solid line", "Dashed line", "Dotted line", " Thick line"],
         answer: 3,
         buttonClass: "btnE",
@@ -242,7 +246,6 @@ function canvas_arrow(context, fromx, fromy, tox, toy, r) {
   context.fill();
 }
 
-
 function drawAxis() {
   btnAxis.classList.add("hide");
   var canvas = document.getElementById("simscreen");
@@ -252,7 +255,7 @@ function drawAxis() {
   btnTop.classList.remove("hide");
   // ctx.strokeStyle = "#B9B6B1";
   // animate(30, 250, 680, 250, 0, nameAxis);
-  
+
   var ctx = canvas.getContext("2d");
   ctx.beginPath();
   ctx.lineWidth = 2;
@@ -260,17 +263,23 @@ function drawAxis() {
   ctx.strokeStyle = "black";
   ctx.fillStyle = "black";
   ctx.font = "bold 18px Comic Sans MS"; // Increased font size slightly
-  
+
   // Move to the starting point (0, 120)
   ctx.moveTo(0, 220 - 90); // Adjusted starting y-coordinate
-  
+
   // Draw the first rectangle (Front view)
   ctx.fillText("Front view", 60, 122); // Adjusted text position
   ctx.lineTo(180, 220 - 90); // Adjusted x-coordinate
   ctx.lineTo(180, 316 - 90); // Adjusted x-coordinate
   ctx.lineTo(0, 316 - 90); // Adjusted y-coordinate
   ctx.lineTo(0, 220 - 90);
-  
+  // ctx.moveTo(0, 316 - 90); // Adjusted x-coordinate
+  ctx.moveTo(120, 220 - 90); // Adjusted x-coordinate
+  ctx.lineTo(120, 220 - 60); // Adjusted x-coordinate
+  ctx.lineTo(120 - 60, 220 - 60); // Adjusted x-coordinate
+  ctx.lineTo(120 - 60, 220 - 30); // Adjusted x-coordinate
+  ctx.lineTo(0, 220 - 30); // Adjusted x-coordinate
+
   // Draw the second rectangle (Top view)
   ctx.moveTo(0, 230 + 20); // Adjusted starting y-coordinate
   ctx.fillText("Top view", 60, 242); // Adjusted text position
@@ -286,11 +295,11 @@ function drawAxis() {
   ctx.lineTo(0, 230 + 20);
   ctx.stroke();
   ctx.closePath();
-  
+
   // Draw additional lines and arrows
   ctx.beginPath();
   ctx.strokeStyle = "blue";
-  
+
   // Adjusted coordinates for arrows, moved 40 units left
   ctx.moveTo(215, 135);
   ctx.lineTo(215, 220);
@@ -304,7 +313,10 @@ function drawAxis() {
   ctx.moveTo(195, 316);
   ctx.lineTo(195, 255);
   ctx.stroke();
-  
+  ctx.moveTo(195, 130);
+  ctx.lineTo(195, 160);
+  ctx.stroke();
+
   // Draw more lines
   ctx.moveTo(54, 470);
   ctx.lineTo(14, 470);
@@ -326,13 +338,16 @@ function drawAxis() {
   canvas_arrow(ctx, 215, 430, 215, 255, 5);
   canvas_arrow(ctx, 195, 245, 195, 316, 5);
   canvas_arrow(ctx, 195, 275, 195, 255, 5);
+  canvas_arrow(ctx, 195, 130, 195, 160, 5);
+  canvas_arrow(ctx, 195, 160, 195, 130, 5);
+  // canvas_arrow(ctx, 195, 130, 195, 190, 5);
   canvas_arrow(ctx, 20, 470, 54, 470, 5);
   canvas_arrow(ctx, 54, 470, 14, 470, 5);
   canvas_arrow(ctx, 54, 470, 114, 470, 5);
   canvas_arrow(ctx, 114, 470, 74, 470, 5);
   canvas_arrow(ctx, 14, 487, 174, 487, 5);
   canvas_arrow(ctx, 174, 487, 14, 487, 5);
-  
+
   // Draw circles
   ctx.beginPath();
   ctx.moveTo(620, 22); // Adjusted coordinates for circles
@@ -340,14 +355,14 @@ function drawAxis() {
   ctx.fillStyle = "#3590ae";
   ctx.fill();
   ctx.closePath();
-  
+
   ctx.beginPath();
   ctx.moveTo(620, 45); // Adjusted coordinates for circles
   ctx.arc(620, 42, 9, 0, 2 * Math.PI);
   ctx.fillStyle = "#ae8e6e";
   ctx.fill();
   ctx.closePath();
-  
+
   // Draw additional text
   ctx.font = "bold 14px Arial"; // Adjusted font size
   ctx.fillText("Solid lines", 635, 25); // Adjusted text position
@@ -364,7 +379,7 @@ function drawAxis() {
   ctx.rotate(Math.PI / 2);
   ctx.fillText("96", 2, -11);
   ctx.restore();
-  
+
   ctx.save();
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
@@ -372,7 +387,7 @@ function drawAxis() {
   ctx.rotate(-Math.PI / 2);
   ctx.fillText("200", 2, 16);
   ctx.restore();
-  
+
   ctx.save();
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
@@ -380,7 +395,7 @@ function drawAxis() {
   ctx.rotate(-Math.PI / 2);
   ctx.fillText("72", -10, 18);
   ctx.restore();
-  
+
   ctx.save();
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
@@ -389,15 +404,16 @@ function drawAxis() {
   ctx.fillText("32", -19, 18);
   ctx.restore();
 
-  // animate(30, 250, 680, 250, 0, nameAxis);
+  ctx.save();
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.translate(170, 130);
+  ctx.rotate(-Math.PI / 2);
+  ctx.fillText("32", -19, 18);
+  ctx.restore();
 
-  // canvas.classList.remove("hide");
-  // canvas.scrollIntoView();
-  // btnTop.classList.remove("hide");
-  // ctx.strokeStyle = "#B9B6B1";
   nextQuestion();
 }
-
 
 function nameAxis() {
   ctx.font = "bold 20px Nunito sans MS";
@@ -405,8 +421,7 @@ function nameAxis() {
   ctx.fillText("Y", 690, 255);
 
   btnAxis.classList.add("hide");
-  
-  
+
   // var cvs = document.getElementsByTagName("canvas")[0];
   // var ctx = cvs.getContext("2d");
   // document.getElementById("b").style.visibility = "hidden";
@@ -510,7 +525,6 @@ function nameVPHP() {
 
   btnVPHP.classList.add("hide");
   nextQuestion();
-  
 }
 
 function drawLine(x1, y1, x2, y2, ratio) {
@@ -633,35 +647,35 @@ function drawPyramid() {
     450 - 200 * Math.cos(Math.PI / 6),
     400 - 200 * Math.sin(Math.PI / 6) - 96
   );
-  
+
   animate(
     450 + 150 * Math.cos(Math.PI / 6),
     400 - 150 * Math.sin(Math.PI / 6),
     450 + 150 * Math.cos(Math.PI / 6),
     400 - 150 * Math.sin(Math.PI / 6) - 96
   );
-  
+
   animate(
     450 + 150 * Math.cos(Math.PI / 6),
     304 - 150 * Math.sin(Math.PI / 6),
     450 + 100 * Math.cos(Math.PI / 6),
     304 - 100 * Math.sin(Math.PI / 6)
   );
-  
+
   animate(
     450 - 200 * Math.cos(Math.PI / 6),
     304 - 200 * Math.sin(Math.PI / 6),
     450 - 128 * Math.cos(Math.PI / 6),
     304 - 128 * Math.sin(Math.PI / 6)
   );
-  
+
   animate(
     450 + 150 * Math.cos(Math.PI / 6),
     400 - 150 * Math.sin(Math.PI / 6) - 96,
     450 + 150 * Math.cos(Math.PI / 6) - 200 * Math.cos(Math.PI / 6),
     400 - 150 * Math.sin(Math.PI / 6) - 96 - 200 * Math.sin(Math.PI / 6)
   );
-  
+
   animate(
     450 - 200 * Math.cos(Math.PI / 6),
     400 - 200 * Math.sin(Math.PI / 6) - 96,
@@ -670,14 +684,13 @@ function drawPyramid() {
   );
 
   ctx.closePath();
-  
+
   // Adjusted to hide the correct button based on your HTML structure
-  var btnPyramid = document.querySelector('.btn.btn-pyramid');
+  var btnPyramid = document.querySelector(".btn.btn-pyramid");
   btnPyramid.classList.add("hide");
-  
+
   nextQuestion();
 }
-
 
 function a() {
   ctx.fillStyle = "black";
@@ -750,9 +763,7 @@ function b() {
 //   stepNumber.textContent = newStepNumber;
 // }
 
-
 function c() {
-
   // currentStepCount = 3;
   // updateStepTitle1("Draw the desired outline of the project", currentStepCount);
   ctx.strokeStyle = "#3590ae";
@@ -831,13 +842,11 @@ function d() {
     450 + 100 * Math.cos(Math.PI / 6),
     400 - 32 - 32 - 100 * Math.sin(Math.PI / 6)
   );
- 
+
   ctx.closePath();
   btnD.classList.add("hide");
   nextQuestion();
 }
-
-
 
 function e() {
   var canvas = document.getElementById("simscreen");
@@ -845,10 +854,11 @@ function e() {
 
   ctx.beginPath();
   ctx.strokeStyle = "#3590ae";
-  ctx.lineWidth = 4.5;  // Set initial line width
+  ctx.lineWidth = 4.5; // Set initial line width
 
   // Define the sequence of animations using setTimeout for a smooth animation effect
-  animateWithDelay(ctx,
+  animateWithDelay(
+    ctx,
     450 - 200 * Math.cos(Math.PI / 6),
     400 - 200 * Math.sin(Math.PI / 6),
     450 - 200 * Math.cos(Math.PI / 6),
@@ -856,8 +866,9 @@ function e() {
     5 // Line width for this segment
   );
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 + 150 * Math.cos(Math.PI / 6),
       400 - 150 * Math.sin(Math.PI / 6),
       450 + 150 * Math.cos(Math.PI / 6),
@@ -866,8 +877,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450,
       400 - 32,
       450 + 50 * Math.cos(Math.PI / 6),
@@ -876,8 +888,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 - 128 * Math.cos(Math.PI / 6),
       304 - 128 * Math.sin(Math.PI / 6),
       450 - 200 * Math.cos(Math.PI / 6),
@@ -886,8 +899,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 + 100 * Math.cos(Math.PI / 6),
       304 - 100 * Math.sin(Math.PI / 6),
       450 + 150 * Math.cos(Math.PI / 6),
@@ -896,8 +910,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 + 50 * Math.cos(Math.PI / 6),
       400 - 32 - 50 * Math.sin(Math.PI / 6),
       450 + 50 * Math.cos(Math.PI / 6),
@@ -906,8 +921,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 + 50 * Math.cos(Math.PI / 6),
       400 - 32 - 32 - 50 * Math.sin(Math.PI / 6),
       450 + 100 * Math.cos(Math.PI / 6),
@@ -916,8 +932,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 + 100 * Math.cos(Math.PI / 6),
       400 - 32 - 32 - 100 * Math.sin(Math.PI / 6),
       450 + 100 * Math.cos(Math.PI / 6),
@@ -926,8 +943,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 + 150 * Math.cos(Math.PI / 6),
       400 - 150 * Math.sin(Math.PI / 6) - 96,
       450 + 150 * Math.cos(Math.PI / 6) - 200 * Math.cos(Math.PI / 6),
@@ -936,8 +954,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 - 200 * Math.cos(Math.PI / 6),
       400 - 200 * Math.sin(Math.PI / 6) - 96,
       450 + 150 * Math.cos(Math.PI / 6) - 200 * Math.cos(Math.PI / 6),
@@ -946,8 +965,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450,
       400,
       450 - 200 * Math.cos(Math.PI / 6),
@@ -956,8 +976,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450,
       400,
       450 + 150 * Math.cos(Math.PI / 6),
@@ -966,8 +987,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 + 100 * Math.cos(Math.PI / 6),
       304 - 100 * Math.sin(Math.PI / 6),
       450 - 28 * Math.cos(Math.PI / 6),
@@ -976,8 +998,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 - 128 * Math.cos(Math.PI / 6),
       304 - 128 * Math.sin(Math.PI / 6),
       450 - 28 * Math.cos(Math.PI / 6),
@@ -986,8 +1009,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 - 128 * Math.cos(Math.PI / 6),
       304 - 128 * Math.sin(Math.PI / 6),
       450 - 128 * Math.cos(Math.PI / 6),
@@ -996,8 +1020,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450 - 128 * Math.cos(Math.PI / 6),
       304 - 128 * Math.sin(Math.PI / 6) + 64,
       450,
@@ -1006,8 +1031,9 @@ function e() {
     );
   }, 150); // Delay for animation
 
-  setTimeout(function() {
-    animateWithDelay(ctx,
+  setTimeout(function () {
+    animateWithDelay(
+      ctx,
       450,
       400,
       450,
@@ -1017,23 +1043,23 @@ function e() {
   }, 150); // Delay for animation
 
   ctx.closePath();
-  
+
   // Adjusted to hide the correct button based on your HTML structure
-  var btnE = document.querySelector('.btn.btn-e');
+  var btnE = document.querySelector(".btn.btn-e");
   btnE.classList.add("hide");
 
   // Show final statement and hide unnecessary elements
-  var finalStatement = document.querySelector('.final-statement');
-  finalStatement.classList.remove('hide');
+  var finalStatement = document.querySelector(".final-statement");
+  finalStatement.classList.remove("hide");
 
-  var practiceStep = document.querySelector('.practice-step-no');
-  practiceStep.classList.add('hide');
+  var practiceStep = document.querySelector(".practice-step-no");
+  practiceStep.classList.add("hide");
 
-  var practiceStepInfo = document.querySelector('.practice-step-info');
-  practiceStepInfo.classList.add('hide');
+  var practiceStepInfo = document.querySelector(".practice-step-info");
+  practiceStepInfo.classList.add("hide");
 
-  var btnNext = document.querySelector('.btn-next');
-  btnNext.classList.add('hide');
+  var btnNext = document.querySelector(".btn-next");
+  btnNext.classList.add("hide");
 
   quizDiv.classList.add("hide");
 }
@@ -1045,7 +1071,7 @@ function animateWithDelay(ctx, x1, y1, x2, y2, lineWidth) {
   var dx = (x2 - x1) / steps;
   var dy = (y2 - y1) / steps;
 
-  var animateInterval = setInterval(function() {
+  var animateInterval = setInterval(function () {
     ctx.lineWidth = lineWidth;
     ctx.beginPath();
     ctx.moveTo(x1 + dx * currentStep, y1 + dy * currentStep);
@@ -1060,8 +1086,6 @@ function animateWithDelay(ctx, x1, y1, x2, y2, lineWidth) {
     }
   }, 8); // Animation speed: lower value for smoother animation
 }
-
-
 
 // function f() {
 //   ctx.beginPath();
