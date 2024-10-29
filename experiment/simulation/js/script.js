@@ -1,7 +1,8 @@
 const data = [
   {
     step: 1,
-    title: "Draw the axis and name VP & HP",
+    title:
+      "Draw a horizontal line as the reference line for the isometric view, and draw a line perpendicular to it. ",
     questions: [
       {
         question: "How many views will be given in this experiment______?",
@@ -20,7 +21,8 @@ const data = [
   },
   {
     step: 2,
-    title: "Draw the desired outline of the project",
+    title:
+      "From the intersection, draw a 30° line on either side of the perpendicular line, representing the base of the solid.",
     questions: [
       {
         question:
@@ -33,7 +35,8 @@ const data = [
   },
   {
     step: 3,
-    title: "Transfer the front view to isometric view",
+    title:
+      "Mark the solid’s width, depth and height on the three lines intersecting at the reference line and extend lines parallel to the initially drawn lines, using the dimensions, i.e., width = 150mm, depth = 200mm and height = 96mm, to obtain the isometric box.",
     questions: [
       {
         question:
@@ -46,7 +49,8 @@ const data = [
   },
   {
     step: 4,
-    title: "Transfer the top view to isometric view",
+    title:
+      "Use the front and top views to mark the dimensions on the isometric box.",
     questions: [
       {
         question:
@@ -59,7 +63,8 @@ const data = [
   },
   {
     step: 5,
-    title: "Complete the isometric view using front and top views",
+    title:
+      "Use the front and top views to mark the dimensions on the isometric box.",
     questions: [
       {
         question: " Isometric view of rhombus will become__________?",
