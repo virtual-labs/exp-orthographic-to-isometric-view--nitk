@@ -74,8 +74,8 @@
       "answers": {
         "a": "<img src='./images/image4.png' />",
         "b": "<img src='./images/image20.png' />",
-        "c": "<img src='./images/image17.png' />",
-        "d": "<img src='./images/image18.png' />"
+        "c": "<img src='./images/img17.png' />",
+        "d": "<img src='./images/img18.png' />"
       },
       "explanations": {
         "a": "The right answer is (d).  ",
