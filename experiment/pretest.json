@@ -74,16 +74,16 @@
       "answers": {
         "a": "<img src='./images/image4.png' />",
         "b": "<img src='./images/image20.png' />",
-        "c": "<img src='./images/img17.png' />",
-        "d": "<img src='./images/img18.png' />"
+        "c": "<img src='./images/imgg17.png' />",
+        "d": "<img src='./images/imgg18.png' />"
       },
       "explanations": {
-        "a": "The right answer is (d).  ",
-        "b": "The right answer is (d). ",
-        "c": "The right answer is (d). ",
-        "d": "Correct, the right answer is (d). "
+        "a": "The right answer is (c).  ",
+        "b": "The right answer is (c). ",
+        "c": "The right answer is (c). ",
+        "d": "Correct, the right answer is (c). "
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "intermediate"
     }
   ]
